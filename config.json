@@ -1,0 +1,104 @@
+{
+  "_readme": "Edit these lists, then run Debloat.ps1. Names accept * wildcards. Core Windows components are protected inside the script and can never be removed from here.",
+
+  "apps": {
+    "safe": [
+      "Clipchamp.Clipchamp",
+      "Microsoft.BingNews",
+      "Microsoft.BingWeather",
+      "Microsoft.BingSearch",
+      "Microsoft.MicrosoftSolitaireCollection",
+      "Microsoft.MicrosoftOfficeHub",
+      "Microsoft.PowerAutomateDesktop",
+      "Microsoft.GetHelp",
+      "Microsoft.Getstarted",
+      "Microsoft.WindowsFeedbackHub",
+      "Microsoft.Windows.DevHome",
+      "MicrosoftCorporationII.MicrosoftFamily",
+      "Microsoft.549981C3F5F10",
+      "Microsoft.MixedReality.Portal",
+      "Microsoft.SkypeApp",
+      "Microsoft.People",
+      "Microsoft.WindowsMaps"
+    ],
+    "oem": [
+      "C27EB4BA.DropboxOEM",
+      "AcerIncorporated.AcerRegistration",
+      "AcerIncorporated.UserExperienceImprovementProgramV"
+    ],
+    "optional": [
+      "Microsoft.OutlookForWindows",
+      "Microsoft.Todos",
+      "Microsoft.MicrosoftStickyNotes",
+      "Microsoft.YourPhone",
+      "MicrosoftCorporationII.QuickAssist",
+      "Microsoft.ZuneMusic",
+      "Microsoft.Edge.GameAssist",
+      "5319275A.WhatsAppDesktop",
+      "Microsoft.GamingApp",
+      "Microsoft.XboxGamingOverlay",
+      "Microsoft.XboxSpeechToTextOverlay",
+      "SpotifyAB.SpotifyMusic",
+      "BytedancePte.Ltd.TikTok",
+      "*Netflix*",
+      "Disney.*"
+    ]
+  },
+
+  "startup": {
+    "disable": [
+      "Teams",
+      "MicrosoftEdgeAutoLaunch_*"
+    ],
+    "optional": [
+      "OneDrive",
+      "Docker Desktop",
+      "AnyDesk*",
+      "Spotify",
+      "Steam",
+      "Discord"
+    ]
+  },
+
+  "registry": [
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "ContentDeliveryAllowed", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "FeatureManagementEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "OemPreInstalledAppsEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "PreInstalledAppsEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "PreInstalledAppsEverEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SilentInstalledAppsEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SoftLandingEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SystemPaneSuggestionsEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "RotatingLockScreenOverlayEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-310093Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-338387Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-338388Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-338389Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-338393Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-353694Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-353696Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-353698Enabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager", "name": "SubscribedContent-88000326Enabled", "value": 0 },
+
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "Start_IrisRecommendations", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "Start_AccountNotifications", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "Start_TrackProgs", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "ShowSyncProviderNotifications", "value": 0 },
+
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\UserProfileEngagement", "name": "ScoobeSystemSettingEnabled", "value": 0 },
+
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo", "name": "Enabled", "value": 0 },
+    { "path": "HKCU:\\Control Panel\\International\\User Profile", "name": "HttpAcceptLanguageOptOut", "value": 1 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Privacy", "name": "TailoredExperiencesWithDiagnosticDataEnabled", "value": 0 },
+
+    { "path": "HKCU:\\Software\\Microsoft\\InputPersonalization", "name": "RestrictImplicitInkCollection", "value": 1 },
+    { "path": "HKCU:\\Software\\Microsoft\\InputPersonalization", "name": "RestrictImplicitTextCollection", "value": 1 },
+    { "path": "HKCU:\\Software\\Microsoft\\Siuf\\Rules", "name": "NumberOfSIUFInPeriod", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy", "name": "HasAccepted", "value": 0 },
+
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings", "name": "IsAADCloudSearchEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings", "name": "IsMSACloudSearchEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings", "name": "IsDeviceSearchHistoryEnabled", "value": 0 },
+    { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings", "name": "IsDynamicSearchBoxEnabled", "value": 0 }
+  ]
+}
